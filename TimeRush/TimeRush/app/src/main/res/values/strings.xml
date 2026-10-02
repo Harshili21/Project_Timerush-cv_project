@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TimeRush</string>
+    <string name="start_quiz">START QUIZ</string>
+    <string name="next">NEXT →</string>
+    <string name="play_again">PLAY AGAIN</string>
+    <string name="home">HOME</string>
+    <string name="your_score">YOUR SCORE</string>
+    <string name="quiz_complete">QUIZ COMPLETE</string>
+    <string name="tagline">Test Your Knowledge. Beat the Clock.</string>
+</resources>

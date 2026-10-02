@@ -1,0 +1,39 @@
+# Python
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# IDE / Editor
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+
+# Android / Gradle
+.gradle/
+build/
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+
+# Archives & Temporary files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# OS Generated
+.DS_Store
+Thumbs.db
+Desktop.ini

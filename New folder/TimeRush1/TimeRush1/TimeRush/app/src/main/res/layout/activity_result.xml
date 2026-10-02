@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_main"
+    android:padding="24dp">
+
+    <!-- Top label -->
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUIZ COMPLETE"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#6C8BC7"
+        android:letterSpacing="0.15"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Emoji -->
+    <TextView
+        android:id="@+id/tv_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🌟"
+        android:textSize="72sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Score Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/score_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="28dp"
+        app:cardBackgroundColor="#1A2744"
+        app:cardElevation="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_emoji"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="36dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR SCORE"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#6C8BC7"
+                android:letterSpacing="0.2" />
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8/10"
+                android:textSize="72sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#FFFFFF"
+                android:lineSpacingMultiplier="1.0" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="3dp"
+                android:background="@drawable/divider_accent"
+                android:layout_marginVertical="12dp" />
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Excellent! 🏆"
+                android:textSize="26sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#FFFFFF"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_sub_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You're a Quiz Master!"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#8899CC"
+                android:gravity="center"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Play Again Button -->
+    <Button
+        android:id="@+id/btn_play_again"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="PLAY AGAIN"
+        android:textSize="17sp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.08"
+        android:textColor="#0D1B3E"
+        android:background="@drawable/btn_start"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/score_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Home Button -->
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="HOME"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.08"
+        android:textColor="#8899CC"
+        android:background="@drawable/btn_outline"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_play_again"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
